@@ -6,8 +6,8 @@ namespace TEST
     {
         static void Main(string[] args)
         {
-            string word = "code academy";
-            word = word.Substring(0,5);
+            string word = "code dd academy";
+            word = word.Substring(5,2);
             Console.WriteLine( word);
         }
     }

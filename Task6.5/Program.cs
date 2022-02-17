@@ -17,10 +17,7 @@ namespace Task6._5
                 int index = word.IndexOfAny(chars);
                 Console.WriteLine(index);
                 Console.WriteLine("******");
-                  for (int i = 0; i < word.Length; i++)
-                  {
-                
-                  }
+                  
 
             Console.WriteLine(word[index]);
 

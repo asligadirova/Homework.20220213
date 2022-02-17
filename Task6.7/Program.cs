@@ -13,11 +13,7 @@ namespace Task6._7
             char[] ch = { 'a', 'b', 'c' };
             int index= word.IndexOfAny(ch);
             Console.WriteLine(index);
-            for (int i = 0; i < word.Length; i++)
-            {
-
-
-            }
+           
             Console.WriteLine(word[index]);
 
 
@@ -27,13 +23,29 @@ namespace Task6._7
             char[] ch1 = { 'b', 'c' };
             int index1 = word1.IndexOfAny(ch1);
             Console.WriteLine(index1);
-            for (int k = 0; k < word1.Length; k++)
-            {
-
-            }
-                             
+                                  
             
-            Console.WriteLine(word[index1]);
+            Console.WriteLine(word1[index1]);
+
+
+            string word2;
+            word2 = word1.Remove(0, index1 + 1);
+            Console.WriteLine(word2);
+            char[] ch2 = { 'b', 'c' };
+            int index2 = word2.IndexOfAny(ch2);
+            Console.WriteLine(index2);
+           
+
+            Console.WriteLine(word2[index2]);
+            if (index>index1 && index1>index2 && index>index2)
+            {
+                Console.WriteLine("dogurdur");
+            }
+            else
+            {
+                Console.WriteLine("dogru deyil");
+            }
+
 
 
         }
