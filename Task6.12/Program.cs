@@ -11,10 +11,18 @@ namespace Task6._12
             //simvollarini yox et
 
             string word = "azerbaycan";
-            word = word.Remove(5, 1);
-            Console.WriteLine(word);
-           
+            char[] ch = { 'a' };
 
+            int firsrindex =word.IndexOfAny(ch);          
+            int lastindex = word.LastIndexOfAny(ch);
+            Console.WriteLine(firsrindex);
+            Console.WriteLine(lastindex);
+
+            word = word.Insert(firsrindex, "@");            
+            word = word.Insert(lastindex+2, "@");            
+            word = word.Replace('a', '-');           
+            word = word.Replace('@', 'a');
+            Console.WriteLine(word);
             
 
         }

@@ -15,7 +15,7 @@ namespace Task6._14
                 {
                     word = word.Replace(word[i], word[i + 1]);
                 }
-
+               
                 if (i % 2 == 0)
                 {
                     Console.Write(word.ToUpper()[i]);
