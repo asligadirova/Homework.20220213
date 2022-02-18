@@ -13,20 +13,18 @@ namespace Task6._9
             string word2;
             word2 = word.Substring(word.Length - 3);
             Console.Write($"son 3 simvol: {word2}\n");
+
+           
+
+            for (int i = word2.Length-1; i >= 0; i--)
+            {
+                Console.WriteLine(word2[i]);
+
+            }
+
             
-            
 
-            char first;
-
-
-            do
-            {               
-                first = word2[word2.Length-1];                
-                word2 = word2.Substring(0);
-            } while (word2.Length<0);
-              
-             
-                Console.WriteLine($"son 3 simvolun tersi:{word2}");
+            //Console.WriteLine($"son 3 simvolun tersi:{word2}");
             if (word2==word1)
             {
                 Console.WriteLine("beraberdir");

@@ -7,7 +7,7 @@ namespace Task6._2
     {
         static void Main(string[] args)
         {
-            string word = "aoaec"
+            string word = "aoaeb"
 ;
             //2) Verilmish metnde sol terefden tek yerde dayanan simvollarin hamisi {a} simvoludurmu?
 
@@ -16,16 +16,24 @@ namespace Task6._2
                 if (i%2==0 )
                 {
                     Console.WriteLine(word[i]);
+                    if (word[i] != 'a')
+                    {
+                        Console.WriteLine($"Tek yerde dayanan {i}-ci element a sivoluna beraber deyil");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Tek yerde dayanan {i}-ci element a sivoluna beraberir");
+                    }
                     
-                   
+
                 }
-                
 
+               
             }
-           
-            
 
             
+
+
 
 
 
