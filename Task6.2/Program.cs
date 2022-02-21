@@ -6,32 +6,36 @@ namespace Task6._2
     internal class Program
     {
         static void Main(string[] args)
-        {
-            string word = "aoaeb"
-;
+        { 
             //2) Verilmish metnde sol terefden tek yerde dayanan simvollarin hamisi {a} simvoludurmu?
-
+           
+                      
+            char a = 'b';
+            bool okey = true;
+            string word = "b1x1b1b1";
             for (int i = 0; i < word.Length; i++)
             {
-                if (i%2==0 )
+                if (i % 2 == 0)
                 {
-                    Console.WriteLine(word[i]);
-                    if (word[i] != 'a')
+                    if (word[i] != a)
                     {
-                        Console.WriteLine($"Tek yerde dayanan {i}-ci element a sivoluna beraber deyil");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Tek yerde dayanan {i}-ci element a sivoluna beraberir");
+                       okey = false;
+                        break;
                     }
                     
-
+                    
                 }
-
                
             }
 
-            
+            if (okey==true)
+            {
+                Console.WriteLine("dogrudur");
+            }
+            else
+            {
+                Console.WriteLine("dogru deyil");
+            }
 
 
 
